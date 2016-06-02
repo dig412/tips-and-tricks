@@ -1,0 +1,22 @@
+#Tips & Tricks
+
+##PHP Tools
+* Debug Console
+* Amiss
+* Kint
+* XDebug profiler extension / cli
+* Webgrind
+
+##Windows
+* ConEmu
+* Kitty
+* Coloured Terminals
+
+##Git
+* GitHub Windows / Posh Git
+* Power Prompt
+* Rebase -i
+* share alias
+* nuke alias
+* checkout --
+* - means "last branch"
