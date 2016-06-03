@@ -68,8 +68,33 @@ class: center, middle
 * Rebase -i
 * share alias
 * nuke alias
+
+```
+  difff    = diff -b --color-words --diff-algorithm=histogram
+  share    = "!git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\""
+  nuke     = !sh -c 'git branch -D $1 && git branch -d -r origin/$1 && git push origin :$1' -
+```
+
 * checkout -- 
 * - means "last branch"
+
+```
+git checkout master
+git pull
+git checkout mybranch
+git rebase master
+git checkout master
+git merge mybranch
+```
+
+```
+git checkout master
+git pull
+git checkout -
+git rebase -
+git checkout -
+git merge -
+```
 
 ---
 class: center, middle
