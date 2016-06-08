@@ -56,15 +56,15 @@ $defaults = array(
 
 ---
 ##Kint
-* Prints strings, arrays, objects, JSON
-* HTML and text-only output
+* Prints strings, JSON, arrays, objects
+* Has both HTML and text-only output
 * `d` = debug, `dd` = debug and die
 
 ![](images/kint2.png)
 
 ---
 ##Kint
-* `debug_backtrace()` replacement
+* `debug_backtrace()` replacement - browse the call stack and all arguments passed along the way
 
 ![](images/kint3.png)
 
@@ -72,7 +72,7 @@ $defaults = array(
 ##Amiss
 * Data mapper ORM
 * Keeps its hands off your codebase - POPO
-* Works well as part of a Repository pattern
+* Works well as part of a Repository pattern, lets you keep all persistence logic away from business logiv
 
 .center[
 ![](images/amiss1.png)
@@ -81,6 +81,7 @@ $defaults = array(
 ---
 ##Amiss
 * Fantastic documentation - narrative and comprehensive
+* Comprehensively unit tested
 
 .center.w70[
 ![](images/amiss2.png)
@@ -88,7 +89,7 @@ $defaults = array(
 
 ---
 ##XDebug & Webgrind
-* Why is this page slow?
+* Helps you find out where code is spending its time
 * XDebug extension generates profile information
 * Webgrind makes the profile information browsable and understandable
 * Configurable using extensions for Firefox & Chrome:
@@ -151,9 +152,9 @@ class: center, middle
 
 * Great for hosting Powershell & Cmd.exe shells
 
-* Powershell provides aliases for common Linux command line tools - `ls` being the most helpful
+    * Powershell provides aliases for common Linux command line tools - `ls` being the most helpful
 
-* Can split into tiles windows
+* Can split into tiled windows
 
 * Shortucts for common shell configurations - home directories / ssh sessions
 
@@ -164,6 +165,7 @@ class: center, middle
 ##KiTTy
 
 * Drop in replacement for PuTTY, everyone's favourite windows SSH client
+
 * Adds:
     * Automatic re-connect after suspend / wakeup
     * Resizable config window
