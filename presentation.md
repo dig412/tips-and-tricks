@@ -195,20 +195,44 @@ class: center, middle
 class: center, middle
 #Git
 
+---
 * GitHub Windows / Posh Git
 * Power Prompt
-* Rebase -i
-* share alias
-* nuke alias
+
+---
+##Aliases
 
 ```
-  difff    = diff -b --color-words --diff-algorithm=histogram
+  diff2    = diff -b --color-words --diff-algorithm=histogram
   share    = "!git push -u origin \"$(git rev-parse --abbrev-ref HEAD)\""
   nuke     = !sh -c 'git branch -D $1 && git branch -d -r origin/$1 && git push origin :$1' -
 ```
 
-* checkout -- 
-* - means "last branch"
+`git config --global help.autocorrect=1`
+
+```
+tips-and-tricks [gh-pages]> git stts
+
+WARNING: You called a Git command named 'stts', which does not exist.
+Continuing under the assumption that you meant 'status'
+in 0.1 seconds automatically...
+
+On branch gh-pages
+Your branch is up-to-date with 'origin/gh-pages'.
+Changes not staged for commit:
+
+        modified:   presentation.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+---
+##Shortcuts
+
+* Instead of `git checkout [FILE]` use `git checkout -- [FILE]`
+* `checkout --` gives you tab completion of files you have changed in Git Bash / PoshGit
+
+* &dash; means "last branch"
 
 ```
 git checkout master
