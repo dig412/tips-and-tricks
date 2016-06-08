@@ -196,8 +196,25 @@ class: center, middle
 #Git
 
 ---
-* GitHub Windows / Posh Git
-* Power Prompt
+##Prompt
+
+* GitHub Desktop gies you a complete, up to date git setup with auto-updating and common linux tools
+* Installs PoshGit into Powershell, giving you tab completion and a better prompt
+
+.w80[
+![](images/poshgit1.png)
+]
+
+* Add this to your Powershell profile to get git everywhere:
+
+```powershell
+#Load github shell
+. (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
+. (Resolve-Path "$env:github_posh_git\profile.example.ps1")
+```
+
+* Loads of options for Bash users:
+* `github.com/magicmonty/bash-git-prompt`
 
 ---
 ##Aliases
